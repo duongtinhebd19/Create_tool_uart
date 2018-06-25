@@ -48,6 +48,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(745, 499);
+        MainWindow->setAnimated(false);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         btnconnect = new QPushButton(centralWidget);
@@ -74,6 +75,7 @@ public:
         btnsend = new QPushButton(centralWidget);
         btnsend->setObjectName(QStringLiteral("btnsend"));
         btnsend->setGeometry(QRect(447, 320, 93, 28));
+        btnsend->setAutoDefault(true);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));

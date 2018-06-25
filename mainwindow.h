@@ -22,6 +22,8 @@ private slots:
 
     void serialPort_Read();
 
+    void check_port();
+
 
 private:
     Ui::MainWindow *ui;
